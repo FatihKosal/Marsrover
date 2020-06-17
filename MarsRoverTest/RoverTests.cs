@@ -11,17 +11,18 @@ namespace MarsRoverTest
         {
             RoverController controller = new RoverController();
 
-            var output =  controller.SendCommand(@"
+            var output = controller.SendCommand(@"
 55
 12N
 LMLMLMLMM
 33E
 MMRMMRMRRM
 ");
-            Assert.IsTrue(output.Trim() == @"
+
+            Assert.IsTrue(output.Replace("\n", "").Replace("\r", "") == @"
 13N
 51E
-".Trim());
+".Replace("\n", "").Replace("\r", ""));
         }
 
         [TestMethod]
@@ -34,9 +35,9 @@ MMRMMRMRRM
 32E
 LMLM
 ");
-            Assert.IsTrue(output.Trim() == @"
+            Assert.IsTrue(output.Replace("\n", "").Replace("\r", "") == @"
 23W
-".Trim());
+".Replace("\n", "").Replace("\r", ""));
         }
     }
 }

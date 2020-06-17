@@ -11,7 +11,7 @@ namespace MarsRover
             if (string.IsNullOrWhiteSpace(commandStr))
                 throw new ApplicationException("Command must be initialized");
 
-            string[] commandLines = commandStr.Split(Environment.NewLine, StringSplitOptions.RemoveEmptyEntries);
+            string[] commandLines = commandStr.Split(new string[] { "\n", "\r" }, StringSplitOptions.RemoveEmptyEntries);
 
             if (!(commandLines.Length >= 3 && commandLines.Length % 2 == 1))
                 throw new ApplicationException("CommandStr lines must be bigger than 3 and odd");
