@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Users\\fkosal\\Documents\\MarsRoverSln\\MarsRoverTest\\MarsRoverTest.csproj": {}
+  },
+  "projects": {
+    "D:\\Users\\fkosal\\Documents\\MarsRoverSln\\MarsRoverTest\\MarsRoverTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Users\\fkosal\\Documents\\MarsRoverSln\\MarsRoverTest\\MarsRoverTest.csproj",
+        "projectName": "MarsRoverTest",
+        "projectPath": "D:\\Users\\fkosal\\Documents\\MarsRoverSln\\MarsRoverTest\\MarsRoverTest.csproj",
+        "packagesPath": "D:\\Users\\fkosal\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\fkosal\\Documents\\MarsRoverSln\\MarsRoverTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "D:\\Users\\fkosal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://10.254.63.144:88/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nugetized.blob.core.windows.net/live-reload/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "D:\\Users\\fkosal\\Documents\\MarsRoverSln\\MarsRover\\MarsRover.csproj": {
+                "projectPath": "D:\\Users\\fkosal\\Documents\\MarsRoverSln\\MarsRover\\MarsRover.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[1.3.2, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[1.3.2, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.9.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Users\\fkosal\\Documents\\MarsRoverSln\\MarsRover\\MarsRover.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Users\\fkosal\\Documents\\MarsRoverSln\\MarsRover\\MarsRover.csproj",
+        "projectName": "MarsRover",
+        "projectPath": "D:\\Users\\fkosal\\Documents\\MarsRoverSln\\MarsRover\\MarsRover.csproj",
+        "packagesPath": "D:\\Users\\fkosal\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\fkosal\\Documents\\MarsRoverSln\\MarsRover\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "D:\\Users\\fkosal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://10.254.63.144:88/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nugetized.blob.core.windows.net/live-reload/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

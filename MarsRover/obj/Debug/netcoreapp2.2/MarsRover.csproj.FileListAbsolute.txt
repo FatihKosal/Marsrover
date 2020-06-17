@@ -15,3 +15,12 @@ D:\Users\fkosal\source\repos\MarsRoverSln\MarsRover\obj\Debug\netcoreapp2.2\Mars
 D:\Users\fkosal\source\repos\MarsRoverSln\MarsRover\obj\Debug\netcoreapp2.2\MarsRover.AssemblyInfo.cs
 D:\Users\fkosal\source\repos\MarsRoverSln\MarsRover\obj\Debug\netcoreapp2.2\MarsRover.dll
 D:\Users\fkosal\source\repos\MarsRoverSln\MarsRover\obj\Debug\netcoreapp2.2\MarsRover.pdb
+D:\Users\fkosal\Documents\MarsRoverSln\MarsRover\bin\Debug\netcoreapp2.2\MarsRover.deps.json
+D:\Users\fkosal\Documents\MarsRoverSln\MarsRover\bin\Debug\netcoreapp2.2\MarsRover.dll
+D:\Users\fkosal\Documents\MarsRoverSln\MarsRover\bin\Debug\netcoreapp2.2\MarsRover.pdb
+D:\Users\fkosal\Documents\MarsRoverSln\MarsRover\obj\Debug\netcoreapp2.2\MarsRover.csprojAssemblyReference.cache
+D:\Users\fkosal\Documents\MarsRoverSln\MarsRover\obj\Debug\netcoreapp2.2\MarsRover.csproj.CoreCompileInputs.cache
+D:\Users\fkosal\Documents\MarsRoverSln\MarsRover\obj\Debug\netcoreapp2.2\MarsRover.AssemblyInfoInputs.cache
+D:\Users\fkosal\Documents\MarsRoverSln\MarsRover\obj\Debug\netcoreapp2.2\MarsRover.AssemblyInfo.cs
+D:\Users\fkosal\Documents\MarsRoverSln\MarsRover\obj\Debug\netcoreapp2.2\MarsRover.dll
+D:\Users\fkosal\Documents\MarsRoverSln\MarsRover\obj\Debug\netcoreapp2.2\MarsRover.pdb
