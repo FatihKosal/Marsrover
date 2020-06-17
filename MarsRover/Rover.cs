@@ -24,16 +24,16 @@ namespace MarsRover
             switch (roverPosition[2])
             {
                 case 'W':
-                    direction = new WestDirection();
+                    direction = new WestDirection(this);
                     break;
                 case 'E':
-                    direction = new EastDirection();
+                    direction = new EastDirection(this);
                     break;
                 case 'N':
-                    direction = new NorthDirection();
+                    direction = new NorthDirection(this);
                     break;
                 case 'S':
-                    direction = new SouthDirection();
+                    direction = new SouthDirection(this);
                     break;
 
                 default:
@@ -83,6 +83,10 @@ namespace MarsRover
             {
                 return positionX;
             }
+            set
+            {
+                positionX = value;
+            }
         }
         private int positionY { get; set; }
 
@@ -92,7 +96,13 @@ namespace MarsRover
             {
                 return positionY;
             }
+            set
+            {
+                positionY = value;
+            }
         }
+
+
 
         private List<RoverMoveCommandType> roverCommands = new List<RoverMoveCommandType>();
 
@@ -109,23 +119,7 @@ namespace MarsRover
                         direction = Direction.Right;
                         break;
                     case RoverMoveCommandType.Move:
-                        switch (direction.DirectionCode)
-                        {
-                            case RoverDirectionCodes.East:
-                                this.positionX++;
-                                break;
-                            case RoverDirectionCodes.West:
-                                this.positionX--;
-                                break;
-                            case RoverDirectionCodes.North:
-                                this.positionY++;
-                                break;
-                            case RoverDirectionCodes.South:
-                                this.positionY--;
-                                break;
-                            default:
-                                break;
-                        }
+                        direction.Move();
                         break;
                     default:
                         break;
