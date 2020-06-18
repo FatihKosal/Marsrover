@@ -24,16 +24,16 @@ namespace MarsRover
             switch (roverPosition[2])
             {
                 case 'W':
-                    direction = new WestDirection(this);
+                    direction = WestDirection.Instance;
                     break;
                 case 'E':
-                    direction = new EastDirection(this);
+                    direction = EastDirection.Instance;
                     break;
                 case 'N':
-                    direction = new NorthDirection(this);
+                    direction = NorthDirection.Instance;
                     break;
                 case 'S':
-                    direction = new SouthDirection(this);
+                    direction = SouthDirection.Instance;
                     break;
 
                 default:
@@ -119,7 +119,7 @@ namespace MarsRover
                         direction = Direction.Right;
                         break;
                     case RoverMoveCommandType.Move:
-                        direction.Move();
+                        direction.Move(this);
                         break;
                     default:
                         break;
