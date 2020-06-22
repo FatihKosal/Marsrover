@@ -25,6 +25,7 @@ namespace MarsRover
             for (int i = 1; i < commandLines.Length; i = i + 2)
             {
                 Rover rover = new Rover(commandLines[i], commandLines[i + 1]);
+                validateWhetherThereIsARoverInThisPosition(surface, rover);
                 rover.Move();
                 if (rover.PositionX > surface.EastEdge)
                     throw new ApplicationException("Surface EastEdge could not be passed");
@@ -34,12 +35,7 @@ namespace MarsRover
                     throw new ApplicationException("Surface NorthEdge could not be passed");
                 if (rover.PositionY < surface.SouthEdge)
                     throw new ApplicationException("Surface SouthEdge could not be passed");
-
-                foreach (var placedRover in surface.PlacedRovers)
-                {
-                    if(rover.PositionX == placedRover.PositionX && rover.PositionY == placedRover.PositionY)
-                        throw new ApplicationException(string.Format("There is already a rover in this position {0}{1}", rover.PositionX, rover.PositionY)); ;
-                }
+                validateWhetherThereIsARoverInThisPosition(surface, rover);
 
                 surface.PlaceRover(rover);
                 builder.AppendLine(rover.PositionX.ToString() + rover.PositionY.ToString() + rover.Direction.ToString());
@@ -47,6 +43,15 @@ namespace MarsRover
 
 
             return builder.ToString();
+        }
+
+        private static void validateWhetherThereIsARoverInThisPosition(Surface surface, Rover rover)
+        {
+            foreach (var placedRover in surface.PlacedRovers)
+            {
+                if (rover.PositionX == placedRover.PositionX && rover.PositionY == placedRover.PositionY)
+                    throw new ApplicationException(string.Format("There is already a rover in this position {0}{1}", rover.PositionX, rover.PositionY)); ;
+            }
         }
     }
 }
